@@ -23,9 +23,9 @@ public class ProductBase implements IProductBase {
         System.out.println("Chcesz dodać RTV czy AGD?");
         String choice = scanner.next();
         if (choice.equals("RTV"))
-            products.add(new RTV(gui.addName(), gui.addNumerOfItem(), gui.addCost(), gui.internetAcces()));
+            products.add(new RTV(gui.addName(), gui.addNumberOfItem(), gui.addCost(), gui.internetAcces()));
         else {
-            products.add(new AGD(gui.addName(), gui.addNumerOfItem(), gui.addCost(), gui.isBig()));
+            products.add(new AGD(gui.addName(), gui.addNumberOfItem(), gui.addCost(), gui.isBig()));
         }
     }
 

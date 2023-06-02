@@ -206,5 +206,5 @@ public class GUI implements IGUI {
         System.out.println("Podaj hasło: ");
         return scanner.nextLine();
     }
-    
+
 }
