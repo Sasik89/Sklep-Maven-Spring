@@ -29,7 +29,7 @@ public class UsersBase implements IUsersBase {
             }
         }
         if(!usernameAlreadyTaken) {
-            users.put(userLogin, new Users(userLogin, DigestUtils.md5Hex(gui.addPassword() + SEED), gui.addRole()));
+            users.put(userLogin, new Users(userLogin, DigestUtils.md5Hex(gui.addPassword() + SEED),"USER"));
         }
     }
 
