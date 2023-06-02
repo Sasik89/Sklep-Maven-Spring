@@ -83,8 +83,8 @@ public class GUI implements IGUI {
 
     public void listUserItems(List<Product> productList) {
         for (Product product : productList) {
-            if (product.getClass().getName().equals(RTV.class.getName()) && product.getNumber()>0) {  //instrukcja sprawdza między innymi czy produktów jest więcej niż 0, jeśli nie to ich nie wyświetla
-                RTV rtv = (RTV) product;   //rzutowanie, przypisanie obiektu rtv do product
+            if (product.getClass().getName().equals(RTV.class.getName()) && product.getNumber()>0) {
+                RTV rtv = (RTV) product;
                 System.out.println(new StringBuilder()
                         .append("Nazwa produktu: ")
                         .append(product.getName())
@@ -95,7 +95,7 @@ public class GUI implements IGUI {
                         .append(" Czy ma dostęp do Wi-fi: ")
                         .append(rtv.ishasWiFIacces()));
             } else if (product.getClass().getName().equals(AGD.class.getName()) && product.getNumber()>0) {
-                AGD agd = (AGD) product; //rzutowanie, przypisanie obiektu agd do product
+                AGD agd = (AGD) product;
                 System.out.println(new StringBuilder()
                         .append("Nazwa produktu: ")
                         .append(product.getName())
@@ -111,7 +111,7 @@ public class GUI implements IGUI {
     public void listAdminItems(List<Product> productList) {
         for (Product product : productList) {
             if (product.getClass().getName().equals(RTV.class.getName())) {
-                RTV rtv = (RTV) product;   //rzutowanie, przypisanie obiektu rtv do product
+                RTV rtv = (RTV) product;
                 System.out.println(new StringBuilder()
                         .append("Nazwa produktu: ")
                         .append(product.getName())
@@ -122,7 +122,7 @@ public class GUI implements IGUI {
                         .append(" Czy ma dostęp do Wi-fi: ")
                         .append(rtv.ishasWiFIacces()));
             } else if (product.getClass().getName().equals(AGD.class.getName())) {
-                AGD agd = (AGD) product; //rzutowanie, przypisanie obiektu agd do product
+                AGD agd = (AGD) product;
                 System.out.println(new StringBuilder()
                         .append("Nazwa produktu: ")
                         .append(product.getName())
